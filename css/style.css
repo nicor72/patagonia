@@ -1,0 +1,94 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+  margin-top: 20px;
+}
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 600px;
+  line-height: 0;
+  height: 100%;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/* my style code */
+
+nav{
+  height: 100px;
+  position: fixed;
+  background: rgba(205,220,57,0.8); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(205,220,57,1),rgba(205,220,57,0)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(rgba(205,220,57,1),rgba(205,220,57,0)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(rgba(205,220,57,1),rgba(205,220,57,0)); /*Fx 3.6-15*/
+  background: linear-gradient(rgba(205,220,57,1), rgba(205,220,57,0)); /*Standard*/
+}
+
+#logo-container{
+  height: 100px;
+}
+#logo-container img{
+  width: 30%;
+}
+#main-slider{
+  z-index: -1;
+}
+#main-slider h3{
+  margin-top: 100px;
+}
+.clear{
+  height: 750px;
+}
+.clear2{
+  height: 150px;
+}
+#right-menu{
+  margin-top: 200px;
+}
+.text-shadow{
+  text-shadow: 0px 0px 5px #000000;
+}
