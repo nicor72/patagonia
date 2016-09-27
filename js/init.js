@@ -1,25 +1,20 @@
 (function($){
   $(function(){
 
-    $('.button-collapse').sideNav();
+    $('.button-collapse').sideNav({
+    	menuWidth: 300, // Default is 240
+      	edge: 'left', // Choose the horizontal origin
+      	closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    });
     $('.parallax').parallax();
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
 $(document).ready(function(){
-	$('.slider').slider({full_width: true, indicators: false});
-});
-
-$(document).ready(function(){
+	$('.slider').slider({full_width: true, indicators: false, interval: 10000});
 	$('.scrollspy').scrollSpy();
-});
-
-$(document).ready(function(){
-	$('.tabs-wrapper').pushpin({ top: 0});
-});
-
-$(document).ready(function(){
-    // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+	$('.tabs-wrapper').pushpin({ top: 0 });
 	$('.modal-trigger').leanModal();
+
 });
